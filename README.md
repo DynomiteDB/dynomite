@@ -1,5 +1,10 @@
 
-# Dynomite [![Build Status](https://secure.travis-ci.org/Netflix/dynomite.png)](http://travis-ci.org/Netflix/dynomite)
+# Dynomite 
+
+[![Join the chat at https://gitter.im/DynomiteDB/dynomite](https://badges.gitter.im/DynomiteDB/dynomite.svg)](https://gitter.im/DynomiteDB/dynomite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![Build Status](https://secure.travis-ci.org/Netflix/dynomite.png)](http://travis-ci.org/Netflix/dynomite)
+[![Dev chat at https://gitter.im/Netflix/dynomite](https://badges.gitter.im/Netflix/dynomite.svg)](https://gitter.im/Netflix/dynomite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 **Dynomite**, inspired by [Dynamo whitepaper](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf), is a thin, distributed dynamo layer for different storage engines and protocols. Currently these include [Redis](http://redis.io) and [Memcached](http://www.memcached.org/).  Dynomite supports multi-datacenter replication and is designed for high availability.
 <center>![dynomite logo](images/dynomite-logo.png?raw=true =150x150)</center>
@@ -19,7 +24,7 @@ To build Dynomite from source with _debug logs enabled_ and _assertions disabled
     $ git clone git@github.com:Netflix/dynomite.git
     $ cd dynomite
     $ autoreconf -fvi
-    $ ./configure --enable-debug=log
+    $ ./configure --enable-debug=yes
     $ make
     $ src/dynomite -h
 
@@ -31,7 +36,7 @@ To build Dynomite in _debug mode_:
     $ CFLAGS="-ggdb3 -O0" ./configure --enable-debug=full
     $ make
     $ sudo make install
-    
+
 ## Help
 
     Usage: dynomite [-?hVdDt] [-v verbosity level] [-o output file]
