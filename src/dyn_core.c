@@ -173,7 +173,7 @@ core_stats_create(struct context *ctx)
 
 /**
  * Initialize crypto and create the Dynomite server performance statistics.
- * @param[in,out] ctx Context.
+ * @param[in,out] ctx Dynomite server context.
  * @return rstatus_t Return status code.
  */
 static rstatus_t
